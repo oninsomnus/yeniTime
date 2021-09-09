@@ -32,4 +32,5 @@ svg{
     width: 100%;
     height: auto;
     filter: opacity(0.5);
+    margin-top: 0 !important;
 }
