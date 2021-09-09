@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap');
+
+.main {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+}
+
+p{    
+    font-family: 'Urbanist';
+    color: rgba(0, 0, 0, 0.25)
+}
+
+#yeni, #ku, #bek, #fabi {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+:not(#yeni, #bek, #ku, #fabi) {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
