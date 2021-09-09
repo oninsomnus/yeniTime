@@ -67,3 +67,40 @@ function countdownReal(x){
 }
 
 countdownReal(counts);
+
+//BACK
+
+var wwid = window.innerWidth;
+
+if(wwid <= 964 && wwid >= 678){
+
+new Vivus('main', { 
+  duration: 100,
+  file: './img/newbackXS.svg',
+  start: 'autostart', 
+  animTimingFunction: Vivus.EASE
+});
+
+}
+
+if(wwid > 964){
+
+new Vivus('main', { 
+  duration: 100,
+  file: './img/newbackXS.svg',
+  start: 'autostart', 
+  animTimingFunction: Vivus.EASE
+});
+
+}
+
+if(wwid >= 300 && wwid <= 677){
+
+	new Vivus('main', { 
+	  duration: 100,
+	  file: './img/newbackXXS.svg',
+	  start: 'autostart', 
+	  animTimingFunction: Vivus.EASE
+	});
+
+}

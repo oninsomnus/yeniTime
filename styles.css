@@ -23,3 +23,13 @@ p{
     margin-top: 10px;
     margin-bottom: 50px;
 }
+
+svg{
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    filter: opacity(0.5);
+}
