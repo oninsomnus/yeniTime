@@ -29,6 +29,7 @@ var divmain = document.querySelector(".main")
 for (var count of counts){
     let newElement = document.createElement('p');
     newElement.setAttribute('id', count.id);
+    newElement.setAttribute('class', 'jover');
     divmain.appendChild(newElement);
 
     //var parrafo = document.querySelector("#" + count.id);
