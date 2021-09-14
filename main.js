@@ -34,7 +34,7 @@ for (var count of counts){
     //var parrafo = document.querySelector("#" + count.id);
     let llegadatxt = document.createElement('p');
     if(count.id == 'fabi'){
-        llegadatxt.textContent = '🥳 La verdadera last signature 🥳'
+        llegadatxt.textContent = '🎓🥳 La verdadera last signature 🥳🎓'
     } else {
         llegadatxt.textContent = 'Llegada de ' + count.id.charAt(0).toUpperCase() + count.id.slice(1);
     }
