@@ -80,7 +80,7 @@ var wwid = window.innerWidth;
 if(wwid <= 964 && wwid >= 678){
 
 new Vivus('main', { 
-  duration: 100,
+  duration: 1000,
   file: './img/newbackXS.svg',
   start: 'autostart', 
   animTimingFunction: Vivus.EASE
@@ -91,7 +91,7 @@ new Vivus('main', {
 if(wwid > 964){
 
 new Vivus('main', { 
-  duration: 100,
+  duration: 1000,
   file: './img/newbackXS.svg',
   start: 'autostart', 
   animTimingFunction: Vivus.EASE
@@ -102,10 +102,40 @@ new Vivus('main', {
 if(wwid >= 300 && wwid <= 677){
 
 	new Vivus('main', { 
-	  duration: 100,
+	  duration: 1000,
 	  file: './img/newbackXXS.svg',
 	  start: 'autostart', 
 	  animTimingFunction: Vivus.EASE
 	});
 
+/*     document.querySelector("window").onload = function() {
+        console.log(document.querySelector("svg"))
+        let svg = document.querySelector("svg");
+        svg.setAttribute("preserveAspectRatio", "none")
+    } */
+
+    let observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if(mutation.addedNodes.length){
+                if(mutation.addedNodes[0].id == "rayitas"){
+                    observer.disconnect();
+                    detectedsvg();
+                }
+            }
+        })
+      })
+      
+      observer.observe(document.body, {
+          childList: true
+        , subtree: true
+        , attributes: false
+        , characterData: false
+      })    
+
+}
+
+function detectedsvg(){
+    let svg = document.querySelector("svg");
+    svg.setAttribute("preserveAspectRatio", "none")
+    svg.style.height = "150%";
 }

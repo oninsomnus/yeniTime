@@ -33,8 +33,24 @@ svg{
     height: auto;
     filter: opacity(0.5);
     margin-top: 0 !important;
+    
+    background-size: cover;
 }
 
 .jover:hover{
     color: rgba(0, 0, 0, 0.50)
 }
+
+/* body {
+    background-image: url("/img/newbackXXS.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
+} */
+
+@media (max-width: 600px) {
+    #yeni, #ku, #bek, #fabi {
+        font-size: 12vw;
+    }
+  }
