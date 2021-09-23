@@ -7,7 +7,7 @@
     color: white;
 }
 
-p{    
+p, button{    
     font-family: 'Urbanist';
     color: rgba(0, 0, 0, 0.25)
 }
@@ -19,7 +19,7 @@ p{
     margin-bottom: 0px;
 }
 
-:not(#yeni, #bek, #ku, #fabi) {
+:not(#yeni, #bek, #ku, #fabi, .material-icons) {
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -41,13 +41,31 @@ svg{
     color: rgba(0, 0, 0, 0.50)
 }
 
-/* body {
-    background-image: url("/img/newbackXXS.svg");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;   
-} */
+.dark{
+    background-color: black;
+}
+
+.dark p, .dark button{
+    color: rgba(255,255,255,0.50)
+}
+
+.dark p:hover, .dark button:hover{
+    color: rgba(255,255,255,0.75)
+}
+
+#darkbtn{
+    float: right;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#darkbtn span{
+    font-size: 7vw;
+}
 
 @media (max-width: 600px) {
     #yeni, #ku, #bek, #fabi {

@@ -73,7 +73,7 @@ function countdownReal(x){
 
 countdownReal(counts);
 
-//BACK
+//BACKGROUND RAYAS
 
 var wwid = window.innerWidth;
 
@@ -114,6 +114,8 @@ if(wwid >= 300 && wwid <= 677){
         svg.setAttribute("preserveAspectRatio", "none")
     } */
 
+//BACKGROUND WATCHER
+
     let observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
             if(mutation.addedNodes.length){
@@ -134,8 +136,20 @@ if(wwid >= 300 && wwid <= 677){
 
 }
 
+// BACKGROUND ATTRIBUTE
+
 function detectedsvg(){
     let svg = document.querySelector("svg");
     svg.setAttribute("preserveAspectRatio", "none")
     svg.style.height = "150%";
+}
+
+// DARK MODE
+
+function darkMode(){
+    document.querySelector("body").classList.toggle("dark");
+    /*var testos = document.querySelectorAll('p')
+    testos.forEach(element => {
+        element.classList.add('dark')
+    });*/
 }
