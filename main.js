@@ -5,13 +5,13 @@ var countDownFabi = new Date("Dec 25, 2021 11:00:00").getTime();
 
 var counts = [
     {
+        "id": "yeni",
+        "count":countDownYeni,
+    },
+    {
     
         "id":"fabi",
         "count":countDownFabi
-    },
-    {
-        "id": "yeni",
-        "count":countDownYeni,
     },
     {
     

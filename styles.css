@@ -54,13 +54,14 @@ svg{
 }
 
 #darkbtn{
-    float: right;
     border: none;
     outline: none;
     background: none;
     text-decoration: none;
     border-radius: 50%;
     cursor: pointer;
+    position: absolute;
+    right: 0;
 }
 
 #darkbtn span{
