@@ -1,7 +1,7 @@
 var countDownYeni = new Date("Oct 31, 2021 23:55:00").getTime();
 var countDownKu = new Date("Dec 26, 2021 23:00:00").getTime();
 var countDownBek = new Date("Dec 24, 2021 22:22:00").getTime();
-var countDownFabi = new Date("Sep 28, 2021 11:00:00").getTime();
+var countDownFabi = new Date("Dec 25, 2021 11:00:00").getTime();
 
 var counts = [
     {
@@ -34,11 +34,11 @@ for (var count of counts){
 
     //var parrafo = document.querySelector("#" + count.id);
     let llegadatxt = document.createElement('p');
-    if(count.id == 'fabi'){
-        llegadatxt.textContent = '🎓🥳 La verdadera last signature 🥳🎓'
-    } else {
+    //if(count.id == 'fabi'){
+    //    llegadatxt.textContent = '🎓🥳 La verdadera last signature 🥳🎓'
+    //} else {
         llegadatxt.textContent = 'Llegada de ' + count.id.charAt(0).toUpperCase() + count.id.slice(1);
-    }
+    //}
     divmain.appendChild(llegadatxt);
 }
 
