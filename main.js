@@ -1,4 +1,4 @@
-var countDownYeni = new Date("Oct 31, 2021 23:55:00").getTime();
+var countDownYeni = new Date("Oct 7, 2021 20:07:00").getTime();
 var countDownKu = new Date("Dec 26, 2021 23:00:00").getTime();
 var countDownBek = new Date("Dec 24, 2021 22:22:00").getTime();
 var countDownFabi = new Date("Dec 25, 2021 11:00:00").getTime();
