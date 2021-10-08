@@ -58,8 +58,7 @@ function countdownf(x){
 
         if (distance < 0 && countDownFabi != 946702800000) {
             clearInterval(count);
-		document.querySelector(count.id).nextSibling.innerHTML = "🥳 " + count.id.charAt(0).toUpperCase() + count.id.slice(1) + " llegóóóóóóÓóÓooÓ!!!!🎉🎉";
-            //document.getElementById(count.id).innerHTML = "🥳 " + count.id.charAt(0).toUpperCase() + count.id.slice(1) + " llegóóóóóóÓóÓooÓ!!!!🎉🎉";
+            document.getElementById(count.id).nextSibling.innerHTML = "🥳 " + count.id.charAt(0).toUpperCase() + count.id.slice(1) + " llegóóóóóóÓóÓooÓ!!!!🎉🎉";
         } else if (countDownFabi == 946702800000) {
             document.getElementById('fabi').innerHTML = '🤷‍♂️'
         }
